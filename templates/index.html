@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Registration</title>
+</head>
+<body>
+    <h2>Register New Face</h2>
+    <form action="/register" method="POST" enctype="multipart/form-data">
+        Name: <input type="text" name="name" required><br><br>
+        Image: <input type="file" name="image" accept="image/*" required><br><br>
+        <input type="submit" value="Register Face">
+    </form>
+
+    <h2>Start Face Scan</h2>
+    <form action="/scan" method="GET">
+        <button type="submit">Open Camera and Scan</button>
+    </form>
+</body>
+</html>
